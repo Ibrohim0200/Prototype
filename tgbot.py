@@ -12,6 +12,8 @@ user_data ={}
 def hello():
     pass
 
+def ismoil():
+    pass
 
 @dp.message()
 async def handle_message(message: types.Message):

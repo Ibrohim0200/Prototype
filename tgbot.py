@@ -15,6 +15,9 @@ def hello():
 def ismoil():
     pass
 
+def islom():
+    pass
+
 @dp.message()
 async def handle_message(message: types.Message):
     user_id = message.from_user.id

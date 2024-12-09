@@ -64,3 +64,15 @@ async def send_code(message: types.Message):
         await message.answer(f"Iltimos tasdiqlash raqamini kiriting: {verification_code}")
     else:
         await message.answer(f"Togri raqam kiriting:")
+
+async def chek_code(message: types.Message):
+    user_id = message.from_user.id
+    sent_code = message.text
+    verification_code = user_data[user_id]["verification_code"]
+    if str(verification_code) == sent_code:
+        user_data[user_id]['status'] = 'verified'
+        await message.answer(f"Siz royhatdan otdingiz!\n")
+        await address(message)
+    else:
+        await message.answer(f"Notogri kod. Qaytatdan jonating.")
+    print(user_data)

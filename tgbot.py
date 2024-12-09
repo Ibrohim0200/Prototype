@@ -16,7 +16,7 @@ def ismoil():
     pass
 
 def islom():
-    pass
+    pas
 
 @dp.message()
 async def handle_message(message: types.Message):

@@ -12,6 +12,9 @@ user_data ={}
 def hello():
     pass
 
+def siu():
+    pass
+
 def ismoil():
     pass
 

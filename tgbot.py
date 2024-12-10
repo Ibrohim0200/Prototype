@@ -15,6 +15,9 @@ def hello():
 def siu():
     pass
 
+def asdad():
+    pass
+
 def ismoil():
     pass
 
